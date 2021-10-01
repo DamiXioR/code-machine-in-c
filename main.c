@@ -67,8 +67,8 @@ int main(){
     char const code3[] = "SUP2E4R MAN2";
     char const code4[] = "WOW2OW2ELCOME5!";
 
-    char* thirdCode = setCode(code3);
-    char* fourthCode = setCode(code4);
+    char* thirdCode = readCode(code3);
+    char* fourthCode = readCode(code4);
 
     printf("%s and %d\n", thirdCode, strlen(thirdCode));
     printf("%s and %d\n", fourthCode, strlen(fourthCode));
