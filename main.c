@@ -57,15 +57,26 @@ char* readCode(char const* input)
 int main(){
     char const code[] = "SUPPEEEER MANN";
     char const code2[] = "WOWWOWWELCOMEEEEE!";
+
+    char* firstCode = setCode(code);
+    char* secondCode = setCode(code2);
     
-    printf("%s and %d\n", setCode(code), strlen(setCode(code)));
-    printf("%s and %d\n", setCode(code2), strlen(setCode(code2)));
+    printf("%s and %d\n", firstCode, strlen(firstCode));
+    printf("%s and %d\n", secondCode, strlen(secondCode));
 
     char const code3[] = "SUP2E4R MAN2";
     char const code4[] = "WOW2OW2ELCOME5!";
 
-    printf("%s and %d\n", readCode(code3), strlen(readCode(code3)));
-    printf("%s and %d\n", readCode(code4), strlen(readCode(code4)));
+    char* thirdCode = setCode(code3);
+    char* fourthCode = setCode(code4);
+
+    printf("%s and %d\n", thirdCode, strlen(thirdCode));
+    printf("%s and %d\n", fourthCode, strlen(fourthCode));
+
+    free(firstCode);
+    free(secondCode);
+    free(thirdCode);
+    free(fourthCode);
 
     return 0;    
 }
